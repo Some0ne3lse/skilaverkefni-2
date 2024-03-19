@@ -17,7 +17,7 @@ calcSum(99,1) Expected 100
 // Write a function that takes two values, say a and b, as arguments
 // Return true if the two values are equal and of the same type
 const strictEquality = (a, b) => {
-  return
+  return a === b;
 }
 
 /*
@@ -33,7 +33,7 @@ myFunction('10', '10') Expected true
 // Write a function that takes a value as argument
 // Return the type of the value
 const getTypeOfValue = (a) => {
-  return
+  return typeof a;
 }
 
 /*
@@ -51,8 +51,8 @@ myFunction(['array']) Expected 'object'
 // Write a function that takes a string (a) as argument
 // Return the 1st character of the strgin a
 // Tip: look up the string prototype function slice() or split()
-const getFirstChar = (a, n) => {
-  return
+const getFirstChar = (a) => {
+  return a.slice(0, 1);
 }
 
 /*
@@ -68,7 +68,7 @@ myFunction('gfedcba') Expected 'g'
 // Return the nth character of 'a'
 // Tip: look up the string prototype function slice() or split()
 const getNthChar = (a, n) => {
-  return
+  return a.slice(n - 1, n);
 }
 
 /*
@@ -85,7 +85,7 @@ myFunction('gfedcba',3) Expected 'e'
 // Return the result
 // Tip: look up the string prototype function slice() or split()
 const extractFirstHalfOfString = (a) => {
-  return
+  return a.slice(0, a.length / 2);
 }
 
 /*
@@ -101,7 +101,7 @@ myFunction('gedcba') Expected 'ged'
 // Remove the last 3 characters of a
 // Return the result
 const removeLastNChractersOfString = (a) => {
-  return
+  return a.slice(0, a.length - 3)
 }
 
 /*
@@ -118,7 +118,7 @@ myFunction('fgedcba') Expected 'fged'
 // Otherwise, return false
 // Tip: How does the % operator work?
 const checkIfNumberIsEven = (a) => {
-  return
+  return a % 2 === 0
 }
 
 /*
@@ -134,7 +134,7 @@ myFunction(-111) Expected false
 // Write a function that takes two numbers (a and b) as argument
 // Return b percent of a
 const getPercentageOfNumber = (a, b) => {
-  return
+  return (a * b) / 100;
 }
 
 /*
@@ -156,7 +156,7 @@ myFunction(500,25) Expected 125
 // - Power operator is either Math.pow or **
 //   - e.g. 2**2 = 4
 const useAllTheOperators = (a, b, c, d, e, f) => {
-  return
+  return ((((a + b) - c) * d) / e) ** f;
 }
 
 /*
